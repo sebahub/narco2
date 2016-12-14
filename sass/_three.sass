@@ -1,0 +1,182 @@
+#one
+    //display: none
+
+#two
+    //display: none
+
+#three
+    //display: none
+    
+.three_content
+    max-width: 768px
+    margin: auto
+    .small1
+        width: 100vw
+        max-width: 768px
+        height: 50vw
+        max-height: 384px
+        //background: red
+        .xsmall1
+            width: 50vw
+            max-width: 384px
+            height: 50vw
+            max-height: 384px
+            text-align: center
+            line-height: 50vw
+            //background: yellow
+            float: left
+            img
+                width: 50%
+        .xsmall2
+            float: right
+            width: 50vw
+            max-width: 384px
+            height: 50vw
+            max-height: 384px
+            background: url(../bilder/zawinul.jpeg)
+            background-size: cover
+            background-position: center
+    .small2
+        width: 100vw
+        max-width: 768px
+        height: 50vw
+        max-height: 384px
+        //background: red
+        .xsmall1
+            width: 50vw
+            max-width: 384px
+            height: 50vw
+            max-height: 384px
+            background: url(../bilder/zappa.jpeg)
+            background-size: cover
+            background-position: center
+            float: left
+        .xsmall2
+            float: right
+            width: 50vw
+            max-width: 384px
+            height: 50vw
+            max-height: 384px
+            background: url(../bilder/duke.jpeg)
+            background-size: cover
+            background-position: center
+    .big
+        width: 100vw
+        max-width: 768px
+        height: 100vw
+        max-height: 768px
+        background: $schmuckfarbe
+        clear: both
+
+        h3
+            margin-left: 1rem
+            padding-top: 1rem
+        p
+            margin-left: 2rem
+            margin-right: 2rem
+            
+@media screen and (min-width: $small)
+    .three_content
+        .small1
+            .xsmall1
+                line-height: 384px
+
+    
+            
+            
+            
+            
+
+        
+@media screen and (min-width: $medium)
+    .three_content
+        width: 100%
+        max-width: 1200px
+        margin: auto
+        .small_wrapper
+            width: 50vw
+            height: 50vw
+            float: left
+            
+        .small1
+            width: 25vw
+            height: 50vw
+            float: left
+            .xsmall1
+                width: 25vw
+                height: 25vw
+                float: left
+                line-height: 25vw
+            .xsmall2
+                width: 25vw
+                height: 25vw
+                float: left
+                
+        .small2
+            width: 25vw
+            height: 50vw
+            float: left
+            .xsmall1
+                width: 25vw
+                height: 25vw
+                float: left
+            .xsmall2
+                width: 25vw
+                height: 25vw
+                
+
+        
+            
+        .big
+            clear: none
+            width: 50vw
+            height: 50vw
+            float: right
+            
+@media screen and (min-width: $large)
+    .three_content
+        width: 100%
+        max-width: 1200px
+        margin: auto
+        .small_wrapper
+            width: 600px
+            height: 600px
+            float: left
+            
+        .small1
+            width: 300px
+            height: 600px
+            float: left
+            .xsmall1
+                width: 300px
+                height: 300px
+                float: left
+                line-height: 300px
+            .xsmall2
+                width: 300px
+                height: 300px
+                float: left
+                
+        .small2
+            width: 300px
+            height: 600px
+            float: left
+            .xsmall1
+                width: 300px
+                height: 300px
+                float: left
+            .xsmall2
+                width: 300px
+                height: 300px
+                
+
+        
+            
+        .big
+            clear: none
+            width: 600px
+            height: 600px
+            float: right
+            
+            
+        

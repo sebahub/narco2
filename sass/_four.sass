@@ -1,0 +1,61 @@
+#four
+    width: 100%
+.four_content
+    max-width: 768px
+    margin: auto
+
+    .big
+        width: 100vw
+        max-width: 768px
+        height: 100vw
+        max-height: 768px
+        background: yellow
+        clear: both
+        
+.embed-container 
+    position: relative 
+    padding-bottom: 56.25%
+    height: 0
+    overflow: hidden 
+    width: 100%
+    height: auto
+
+.embed-container iframe 
+
+    position: absolute 
+    top: 0 
+    left: 0 
+    width: 100%
+    height: 100% 
+
+
+.embed-container.ratio4x3 
+    padding-bottom: 75%
+
+        
+
+        
+@media screen and (min-width: $medium)
+    .four_content
+        width: 100%
+        max-width: 1200px
+        margin: auto
+        .big
+            clear: none
+            width: 50vw
+            height: 50vw
+            float: left
+            
+@media screen and (min-width: $large)
+    .four_content
+        width: 100%
+        max-width: 1200px
+        margin: auto
+        .big
+            clear: none
+            width: 600px
+            height: 600px
+            float: left
+            
+            
+        
