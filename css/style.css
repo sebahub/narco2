@@ -721,7 +721,7 @@ header {
   height: 100%;
   margin: 0 auto;
   position: relative;
-  padding-top: 10%; }
+  padding-top: 0%; }
 
 #contact {
   height: 100%;
@@ -767,13 +767,13 @@ fieldset {
   border: 1px solid #aaa; }
 
 #contact textarea {
-  height: 100px;
+  height: 50px;
   max-width: 100%;
   resize: none; }
 
 #contact button[type="submit"] {
   cursor: pointer;
-  width: 25%;
+  width: 33.3333%;
   border: none;
   background: #333333;
   color: #FFF;
