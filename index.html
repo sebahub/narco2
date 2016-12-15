@@ -21,7 +21,7 @@
      </div>
      
      <input type="checkbox" id="button" />
-      <label for="button" onclick><div class= burgerline></div><div class= burgerline></div><div class= burgerline></div><h4>Menu</h4></label> 
+      <label for="button" onclick><div class= burgerline></div><div class= burgerline></div><div class= burgerline></div><!-- <h4>Menu</h4> --></label> 
        
        
 
@@ -42,7 +42,7 @@
    
    
    
-<div id="nav_mobile">
+<div id="nav_mobile" onclick="myFunction()">
     <ul>
         <li><a href=#top>Home</a></li>
         <li><a href=#one>Audio</a></li>
@@ -127,7 +127,7 @@
            <div class="small_wrapper">
            <div class="small1"></div>
            <div class="small2">
-<!--             <iframe style="border: 0; width: 100vw; height: 50vw;" src="https://bandcamp.com/EmbeddedPlayer/album=2712715838/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="http://antirecords.bandcamp.com/album/black-terry-cat">Black Terry Cat by Xenia Rubinos</a></iframe> -->
+             <iframe style="border: 0; width: 100%; height: 100%;" src="https://bandcamp.com/EmbeddedPlayer/album=2712715838/size=large/bgcol=ffffff/linkcol=e99708/artwork=small/transparent=true/" seamless><a href="http://antirecords.bandcamp.com/album/black-terry-cat">Black Terry Cat by Xenia Rubinos</a></iframe>
 
            </div>
            </div>
@@ -138,6 +138,20 @@
         
     </section>
    
+    <section id="four">
+       <div class="four_content">
+<div class="embed-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8PIPyPMNnp8?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+         
+        </div>
+    <div class="clearfix"></div>    
+        
+   
+        
+        
+    </section>
+
     
     <section id="three">
         <div class="three_content">
@@ -159,10 +173,10 @@
             </div>
            
             <div class="big">
-         <!--      <h3>About</h3>
+         <h3>About</h3>
               <p>
                   Narco besteht aus Martin von Dechend an den Drums, Tobias Frey an der Gitarre und Sebastian Schaal am Sax. Sie sind sehr gut, ich möchte ein Kind von ihnen.
-              </p> -->
+              </p>
                
                 
                 
@@ -179,25 +193,34 @@
     </section>  
     
     <div class="clearfix"></div>
-    <section id="four">
-       <div class="four_content">
-<div class="embed-container">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8PIPyPMNnp8?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-         
-        </div>
-    <div class="clearfix"></div>    
-        
-   
-        
-        
-    </section>
+    <div class="picture"></div>
+    
+    
               
               
     <section id="five">
        <div class="five_content">
            <div class="big">
-          
+ <div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>Kontakt</h3>
+    <h4>Du willst uns buchen, oder hast Fragen? Schreib uns!</h4>
+    <fieldset>
+      <input placeholder="Name" type="text" tabindex="1" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Email Adresse" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Nachricht" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Senden</button>
+    </fieldset>
+  </form>
+ 
+  
+</div>       
            </div>
            <div class="small_wrapper">
            <div class="small1">

@@ -91,7 +91,7 @@ h2 {
 .btn1, .btn2, .btn3, .btn4, .btn5 {
   width: 150px;
   height: 50px;
-  background-color: rgba(13, 165, 196, 0.6);
+  background-color: #333333;
   line-height: 50px; }
 
 .btn1 {
@@ -141,7 +141,10 @@ h2 {
   background-color: #f1f1f1;
   padding-top: 15px;
   position: fixed;
-  z-index: 99; }
+  z-index: 99;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease; }
 
 .topbar_content {
   max-width: 1200px;
@@ -179,46 +182,62 @@ input[type=checkbox]:checked ~ #nav_mobile ul {
 
 input[type=checkbox]:checked ~ label .burgerline {
   opacity: 1;
-  -webkit-transform: rotate(45deg) translate(-2px, -1px);
-      -ms-transform: rotate(45deg) translate(-2px, -1px);
-          transform: rotate(45deg) translate(-2px, -1px);
-  background: red; }
+  -webkit-transform: rotate(45deg) translate(0, -12px);
+      -ms-transform: rotate(45deg) translate(0, -12px);
+          transform: rotate(45deg) translate(0, -12px);
+  background: black; }
 
 input[type=checkbox]:checked ~ label .burgerline:nth-last-child(2) {
   opacity: 0;
   -webkit-transform: rotate(0deg) scale(0.2, 0.2);
       -ms-transform: rotate(0deg) scale(0.2, 0.2);
           transform: rotate(0deg) scale(0.2, 0.2);
-  background: red; }
+  background: black; }
 
 input[type=checkbox]:checked ~ label .burgerline:nth-last-child(3) {
-  opacity: 0;
-  -webkit-transform: rotate(-45deg) translate(0, -1px);
-      -ms-transform: rotate(-45deg) translate(0, -1px);
-          transform: rotate(-45deg) translate(0, -1px);
-  background: red; }
+  opacity: 1;
+  -webkit-transform: rotate(-45deg) translate(0, 10px);
+      -ms-transform: rotate(-45deg) translate(0, 10px);
+          transform: rotate(-45deg) translate(0, 10px);
+  background: black; }
 
 .burgerline {
-  width: 43px;
+  width: 30px;
   height: 3px;
   background-color: black;
-  margin-bottom: 3px; }
+  margin-bottom: 5px;
+  z-index: 9999;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
 
 /* burgermenu ende */
 #nav_mobile ul {
   display: block;
   position: absolute;
-  top: -9999px;
-  left: -9999px;
-  background: rgba(0, 0, 0, 0.5);
-  width: 50%; }
+  top: 0px;
+  left: -999px;
+  background: rgba(0, 0, 0, 0.9);
+  width: 75%;
+  height: 100vh;
+  padding-top: 20%;
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease; }
   #nav_mobile ul li {
     display: block;
     color: black;
     font-size: 25px;
-    font-family: "Raleway", sans-serif; }
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+    letter-spacing: 3px; }
     #nav_mobile ul li a {
-      color: orange; }
+      color: white;
+      -webkit-transition: all 0.5s ease;
+              transition: all 0.5s ease; }
+      #nav_mobile ul li a:hover {
+        color: orange; }
 
 nav {
   display: none; }
@@ -230,9 +249,12 @@ nav {
       margin-left: 10%;
       color: black;
       text-transform: uppercase;
-      font-family: "Raleway", sans-serif; }
-      nav ul li a:last-child {
-        margin-right: 0; }
+      font-family: "Raleway", sans-serif;
+      letter-spacing: 2px;
+      padding-bottom: 11px;
+      text-align: center; }
+      nav ul li:hover {
+        border-bottom: 5px solid orange; }
 
 .topbar.small {
   height: 50px; }
@@ -259,8 +281,10 @@ header {
   width: 100%;
   height: 450px;
   background: #333333;
-  background-size: contain;
-  background-attachment: fixed; }
+  background: url(../bilder/king_crimson.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
 
 #one .dates {
   width: 100%;
@@ -282,11 +306,12 @@ header {
     text-align: center;
     padding-top: 10px; }
   .termin_content p {
-    text-align: center; }
+    text-align: center;
+    font-family: "Raleway", sans-serif; }
   .termin_content a {
     width: 150px;
     overflow: hidden;
-    display: inline-block; }
+    font-family: "Raleway", sans-serif; }
 
 .btn1 {
   margin: auto;
@@ -295,7 +320,7 @@ header {
   text-align: center;
   color: white;
   width: 150px;
-  float: none; }
+  font-family: "Raleway", sans-serif; }
 
 .line {
   width: 100%;
@@ -319,6 +344,8 @@ header {
 .two_content {
   max-width: 768px;
   margin: auto; }
+  .two_content iframe {
+    width: 1200px; }
   .two_content .big {
     width: 100vw;
     height: 100vw;
@@ -338,7 +365,7 @@ header {
     max-width: 768px;
     height: 50vw;
     max-height: 384px;
-    background: hotpink; }
+    background: #333333; }
 
 @media screen and (min-width: 960px) {
   .two_content {
@@ -428,14 +455,19 @@ header {
     max-width: 768px;
     height: 100vw;
     max-height: 768px;
-    background: orange;
+    background: #f1f1f1;
     clear: both; }
     .three_content .big h3 {
       margin-left: 1rem;
-      padding-top: 1rem; }
+      padding-top: 2rem;
+      text-transform: uppercase;
+      width: 5%; }
     .three_content .big p {
-      margin-left: 2rem;
-      margin-right: 2rem; }
+      margin-left: 1rem;
+      padding-left: 10px;
+      margin-right: 2rem;
+      line-height: 1.3;
+      border-left: 2px solid orange; }
 
 @media screen and (min-width: 768px) {
   .three_content .small1 .xsmall1 {
@@ -516,6 +548,15 @@ header {
       width: 600px;
       height: 600px;
       float: right; } }
+.picture {
+  width: 100%;
+  height: 350px;
+  background: url(../bilder/narco_insekt_big.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
 #four {
   width: 100%; }
 
@@ -611,7 +652,6 @@ header {
     max-width: 768px;
     height: 100vw;
     max-height: 768px;
-    background: blue;
     clear: both; }
 
 @media screen and (min-width: 768px) {
@@ -675,5 +715,84 @@ header {
       width: 600px;
       height: 600px;
       float: left; } }
+/* Kontaktformular */
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 10%; }
+
+#contact {
+  height: 100%;
+  padding: 25px;
+  margin: 0; }
+
+#contact h3 {
+  display: block;
+  font-weight: 300;
+  margin-bottom: 10px; }
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400; }
+
+fieldset {
+  border: medium none !important;
+  margin-left: 0;
+  min-width: 100%;
+  padding: 0;
+  width: 100%; }
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 94%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px; }
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa; }
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none; }
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 25%;
+  border: none;
+  background: #333333;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+#contact button[type="submit"]:hover {
+  background: orange;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out; }
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa; }
 
 /*# sourceMappingURL=style.css.map */
