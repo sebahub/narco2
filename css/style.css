@@ -96,40 +96,35 @@ h2 {
 
 .btn1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .btn1:hover {
     background-color: rgba(255, 165, 0, 0.5);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .btn2 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .btn2:hover {
     background-color: rgba(255, 165, 0, 0.5);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
 .btn3 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .btn3:hover {
     background-color: rgba(255, 165, 0, 0.5);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
 
 .btn4 {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .btn4:hover {
     background-color: rgba(255, 165, 0, 0.5);
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
 .btn5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-          transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .btn5:hover {
     background-color: rgba(255, 165, 0, 0.5);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
@@ -143,8 +138,7 @@ h2 {
   position: fixed;
   z-index: 99;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease; }
+  transition: all 0.2s ease; }
 
 .topbar_content {
   max-width: 1200px;
@@ -163,10 +157,7 @@ input[type=checkbox] {
 
 label {
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   float: right;
   margin-right: 5%; }
   label h4 {
@@ -182,23 +173,17 @@ input[type=checkbox]:checked ~ #nav_mobile ul {
 
 input[type=checkbox]:checked ~ label .burgerline {
   opacity: 1;
-  -webkit-transform: rotate(45deg) translate(0, -12px);
-      -ms-transform: rotate(45deg) translate(0, -12px);
-          transform: rotate(45deg) translate(0, -12px);
+  transform: rotate(45deg) translate(0, -12px);
   background: black; }
 
 input[type=checkbox]:checked ~ label .burgerline:nth-last-child(2) {
   opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-      -ms-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
+  transform: rotate(0deg) scale(0.2, 0.2);
   background: black; }
 
 input[type=checkbox]:checked ~ label .burgerline:nth-last-child(3) {
   opacity: 1;
-  -webkit-transform: rotate(-45deg) translate(0, 10px);
-      -ms-transform: rotate(-45deg) translate(0, 10px);
-          transform: rotate(-45deg) translate(0, 10px);
+  transform: rotate(-45deg) translate(0, 10px);
   background: black; }
 
 .burgerline {
@@ -207,8 +192,7 @@ input[type=checkbox]:checked ~ label .burgerline:nth-last-child(3) {
   background-color: black;
   margin-bottom: 5px;
   z-index: 9999;
-  -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease; }
+  transition: all 0.5s ease; }
 
 /* burgermenu ende */
 #nav_mobile ul {
@@ -216,26 +200,31 @@ input[type=checkbox]:checked ~ label .burgerline:nth-last-child(3) {
   position: absolute;
   top: 0px;
   left: -999px;
-  background: rgba(0, 0, 0, 0.9);
-  width: 75%;
+  background: rgba(255, 247, 247, 0.9);
+  width: 250px;
   height: 100vh;
   padding-top: 20%;
-  -webkit-transition: all 0.5s ease;
-          transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  border-radius: 0px 100px 0px 0px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
   #nav_mobile ul li {
+    width: 50px;
+    margin-left: 10%;
     display: block;
     color: black;
     font-size: 25px;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     margin-top: 20px;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     padding-bottom: 20px;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    transition: all 0.5s ease; }
+    #nav_mobile ul li:hover {
+      border-bottom: 1px solid rgba(255, 165, 0, 0.5); }
     #nav_mobile ul li a {
-      color: white;
-      -webkit-transition: all 0.5s ease;
-              transition: all 0.5s ease; }
+      color: black;
+      transition: all 0.5s ease; }
       #nav_mobile ul li a:hover {
         color: rgba(255, 165, 0, 0.5); }
 
@@ -254,7 +243,7 @@ nav {
       text-transform: uppercase;
       font-family: "Raleway", sans-serif;
       letter-spacing: 2px;
-      padding-bottom: 11px;
+      padding-bottom: 24px;
       text-align: center; }
       nav ul li:hover {
         border-bottom: 5px solid #333333; }
@@ -262,6 +251,8 @@ nav {
 .topbar.small {
   height: 50px;
   background-color: rgba(255, 255, 255, 0.8); }
+  .topbar.small ul li {
+    padding-bottom: 11px; }
   .topbar.small .logo {
     width: 100px;
     margin-left: 10%;
@@ -390,10 +381,12 @@ header {
     max-width: 1200px;
     margin: auto; }
     .two_content .big {
+      max-width: 50%;
       width: 50vw;
       height: 50vw;
       float: left; }
     .two_content .small_wrapper {
+      max-width: 50%;
       width: 50vw;
       height: 50vw;
       float: right; }
@@ -496,10 +489,12 @@ header {
     max-width: 1200px;
     margin: auto; }
     .three_content .small_wrapper {
+      max-width: 50%;
       width: 50vw;
       height: 50vw;
       float: left; }
     .three_content .small1 {
+      max-width: 50%;
       width: 25vw;
       height: 50vw;
       float: left; }
@@ -513,6 +508,7 @@ header {
         height: 25vw;
         float: left; }
     .three_content .small2 {
+      max-width: 50%;
       width: 25vw;
       height: 50vw;
       float: left; }
@@ -526,6 +522,7 @@ header {
     .three_content .big {
       clear: none;
       width: 50vw;
+      max-width: 50%;
       height: 50vw;
       float: right; } }
 @media screen and (min-width: 1200px) {
@@ -781,6 +778,7 @@ fieldset {
 #contact input[type="url"]:hover,
 #contact textarea:hover {
   -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
   border: 1px solid #aaa; }
 
@@ -803,6 +801,7 @@ fieldset {
 #contact button[type="submit"]:hover {
   background: rgba(255, 165, 0, 0.5);
   -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out; }
 
 #contact button[type="submit"]:active {
