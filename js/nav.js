@@ -21,18 +21,23 @@ $(document).ready(function(){
     });
 });
 
+
+
 <!-- Zeit vorbei -->
     
-$('#timeTable tr td').each(function () {
+$(document).ready(function(){
+$('.termin h3').each(function () {
     var dtSt = $(this).html().split(" ");
-    var dtAr = dtSt[0].split("/");
+    var dtAr = dtSt[0].split(".");
     var when = new Date(dtAr[1] + "/" + dtAr[0] + "/" + dtAr[2] + " " + dtSt[1]);
     console.log(when);    
     var now = Date.now();
-    
-    if (now - when > 3600000) {
-        $(this).parent('tr').addClass('min60');
-    } else if (now - when > 1800000) {
-        $(this).parent('tr').addClass('min30');
+
+    if (now - when > 2419200000) {
+        $(this).parent().addClass('four_weeks');
+    } else if (now - when > 86400000) {
+        $(this).parent().addClass('one_day');
     }
+    });
 });
+

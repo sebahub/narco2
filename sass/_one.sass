@@ -20,12 +20,27 @@
         height: 50px
         display: inline-block
         text-align: center
+    
+        
+.four_weeks 
+    display: none
+    background-color: red
+
+.one_day 
+    background-color: rgba(255, 0, 0, 0.5)
+
+
 
     
     
-.termin_content
+.termin
     margin: auto
-    padding-bottom: 20px
+    height: 150px
+    border-bottom: 1px solid $secondary-color
+    //padding-bottom: 20px
+    //margin-bottom: 10px
+    &:last-of-type
+        border-bottom: none
     
     h3
         text-align: center
@@ -38,30 +53,38 @@
         
 .btn1
     margin: auto
-    //display: inline-block
+    display: block
     position: relative
-    bottom: 20px
-    //margin-bottom: 10px
+    //bottom: 20px
+    margin-bottom: 10px
     text-align: center
     color: white
     width: 150px
     //float: none
     font-family: 'Raleway', sans-serif
-.line
+//.line
     width: 100%
     height: 1px
     background: $secondary-color
         
 @media screen and (min-width: $medium)
-    .termin_content
+    .termin
         float: left
         h3
             text-align: left
+            width: 200px
+            margin-left: 1rem
+            margin-top: 40px
         p
             text-align: left
+            margin-left: 1rem
     .btn1
-        float: right
-        margin-top: 40px
+        //float: right
+        margin-bottom: 40px
+        display: inline-block
+        position: relative
+        bottom: 70px
+        
         
 
 
