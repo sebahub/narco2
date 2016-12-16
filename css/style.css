@@ -134,11 +134,17 @@ h2 {
     background-color: rgba(255, 165, 0, 0.5);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
+.min30 {
+  background-color: orange; }
+
+.min60 {
+  background-color: red; }
+
 .topbar {
   top: 0;
   width: 100%;
   height: 75px;
-  background-color: #f1f1f1;
+  background-color: #fcfcfc;
   padding-top: 15px;
   position: fixed;
   z-index: 99;
@@ -237,7 +243,10 @@ input[type=checkbox]:checked ~ label .burgerline:nth-last-child(3) {
       -webkit-transition: all 0.5s ease;
               transition: all 0.5s ease; }
       #nav_mobile ul li a:hover {
-        color: orange; }
+        color: rgba(255, 165, 0, 0.5); }
+
+#nav_mobile.hidden {
+  display: none; }
 
 nav {
   display: none; }
@@ -254,7 +263,7 @@ nav {
       padding-bottom: 11px;
       text-align: center; }
       nav ul li:hover {
-        border-bottom: 5px solid orange; }
+        border-bottom: 5px solid #333333; }
 
 .topbar.small {
   height: 50px; }
@@ -296,8 +305,14 @@ header {
 .termin {
   width: 100%;
   max-width: 1200px;
-  background-color: #f1f1f1;
-  margin: auto; }
+  background-color: #fcfcfc;
+  margin: auto;
+  text-align: center; }
+  .termin a {
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    text-align: center; }
 
 .termin_content {
   margin: auto;
@@ -307,10 +322,6 @@ header {
     padding-top: 10px; }
   .termin_content p {
     text-align: center;
-    font-family: "Raleway", sans-serif; }
-  .termin_content a {
-    width: 150px;
-    overflow: hidden;
     font-family: "Raleway", sans-serif; }
 
 .btn1 {
@@ -455,7 +466,7 @@ header {
     max-width: 768px;
     height: 100vw;
     max-height: 768px;
-    background: #f1f1f1;
+    background: #fcfcfc;
     clear: both; }
     .three_content .big h3 {
       margin-left: 1rem;
@@ -467,7 +478,7 @@ header {
       padding-left: 10px;
       margin-right: 2rem;
       line-height: 1.3;
-      border-left: 2px solid orange; }
+      border-left: 2px solid rgba(255, 165, 0, 0.5); }
 
 @media screen and (min-width: 768px) {
   .three_content .small1 .xsmall1 {
@@ -783,7 +794,7 @@ fieldset {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 #contact button[type="submit"]:hover {
-  background: orange;
+  background: rgba(255, 165, 0, 0.5);
   -webkit-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out; }
 
