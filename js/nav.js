@@ -1,4 +1,4 @@
-<!-- Topbar resize -->
+// Topbar resize
 
 
 $(function() {
@@ -13,7 +13,7 @@ $(function() {
 });
 
 
-<!-- Burgermenü -->
+// Burgermenü
 
 $(document).ready(function(){
     $("#nav_mobile").click(function(){
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 
 
-<!-- Zeit vorbei -->
+// Zeit vorbei
     
 $(document).ready(function(){
 $('.termin h3').each(function () {
