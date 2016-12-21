@@ -1,7 +1,5 @@
-<!-- Topbar resize -->
-
-
-$(function() {
+$(document).ready(function(){
+// Topbar resize
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 50) {
@@ -10,34 +8,38 @@ $(function() {
             $(".topbar").removeClass("small");
         }
     });
-});
 
+// Burgermenü
 
-<!-- Burgermenü -->
-
-$(document).ready(function(){
     $("#nav_mobile").click(function(){
         $("#button").trigger("click");
     });
-});
 
+// Zeit vorbei
 
-
-<!-- Zeit vorbei -->
-    
-$(document).ready(function(){
-$('.termin h3').each(function () {
-    var dtSt = $(this).html().split(" ");
-    var dtAr = dtSt[0].split(".");
-    var when = new Date(dtAr[1] + "/" + dtAr[0] + "/" + dtAr[2] + " " + dtSt[1]);
-    console.log(when);    
-    var now = Date.now();
-
-    if (now - when > 2419200000) {
-        $(this).parent().addClass('four_weeks');
-    } else if (now - when > 86400000) {
-        $(this).parent().addClass('one_day');
-    }
+    moment.locale("de");
+    var termine = [
+            {date: moment([2017,9,3]), title: "Proberaum, 73614 Schorndorf", link: "https://www.facebook.com/events/121898684951855"},
+            {date: moment([2017,4,2]), title: "Stinkekeller, 73614 Schorndorf", link: "https://www.facebook.com/events/121898684951855"},
+            {date: moment([2016,11,11]), title: "Proberaum, 73614 Schorndorf", link: "https://www.facebook.com/events/121898684951855"},
+            {date: moment([2015,2,1]), title: "Proberaum, 73614 Schorndorf", link: "https://www.facebook.com/events/121898684951855"},
+        ];
+    var terminElement = $("#termine");
+    $.each(termine, function(index, termin) {
+        var dateClass="aktuell";
+        if(moment().subtract(4, "week").isAfter(termin.date)) {
+            dateClass="four_weeks";
+        } else if(moment().subtract(1, "day").isAfter(termin.date)) {
+            dateClass="one_day";
+        }
+        terminElement.append(`
+        <div class="termin `+dateClass+`">
+            <h3>`+termin.date.format("DD MMMM YY")+`</h3>
+            <p>`+termin.title+`</p>
+                <a href="`+termin.link+`"><div class="btn1">Infos</div></a>
+            <div class="clearfix"></div>
+            <div class="line"></div>
+        </div>`);
     });
 });
 
