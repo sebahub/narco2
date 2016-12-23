@@ -23,6 +23,7 @@ $(document).ready(function(){
             {date: moment([2017,4,2]), title: "Stinkekeller, 73614 Schorndorf", link: "https://www.facebook.com/events/121898684951855"},
             {date: moment([2016,11,11]), title: "Proberaum, 73614 Schorndorf", link: "https://www.facebook.com/events/121898684951855"},
             {date: moment([2015,2,1]), title: "Proberaum, 73614 Schorndorf", link: "https://www.facebook.com/events/121898684951855"},
+            {date: moment([2018,2,1]), title: "Proberaum, 73614 Schorndorf", link: "https://www.facebook.com/events/121898684951855"},
         ];
     var terminElement = $("#termine");
     $.each(termine, function(index, termin) {
@@ -42,4 +43,3 @@ $(document).ready(function(){
         </div>`);
     });
 });
-
